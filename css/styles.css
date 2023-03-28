@@ -39,6 +39,15 @@
     --pressed-state: #404bbf;
 }
 
+p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+
 body {
 font-family: 'Roboto', sans-serif;
 color: var(--title-text-color);
@@ -55,7 +64,13 @@ font-style: normal;
 a {
     text-decoration: none;
 }
-
+.container {
+    width: 1440px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+    outline: 2px solid red;
+}
 /* HEADER */
 .header {
     background-color: var(--white-background);
