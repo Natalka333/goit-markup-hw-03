@@ -46,8 +46,9 @@ ul {
     margin: 0;
     padding-left: 0;
 }
-
-
+img {
+    display: block;
+}
 body {
 font-family: 'Roboto', sans-serif;
 color: var(--title-text-color);
@@ -65,7 +66,7 @@ a {
     text-decoration: none;
 }
 .container {
-    width: 1440px;
+    width: 1128px;
     padding-right: 15px;
     padding-left: 15px;
     margin: 0 auto;
@@ -74,11 +75,25 @@ a {
 /* HEADER */
 .header {
     background-color: var(--white-background);
+    padding-top: 24px;
 }
 .footer {
     background-color: var(--primary-text-color);
 }
+.header-navigation {
+    display: flex;
+    align-items: center;
+    margin-left: 156px;
+    margin-right: 156px;
+}
+.header-container {
+    display: flex;
 
+}
+.header-list {
+    display: flex;
+    gap: 40px;
+}
 .header-navigation .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -121,6 +136,9 @@ a {
 .address {
     font-style: normal;
 }
+.address-list {
+    display: flex;
+}
 .address-link {
     font-size: 16px;
     line-height: 1.5;
@@ -136,6 +154,8 @@ a {
 
 .hero-section {
     background-color: var(--primary-text-color);
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 .hero-subject {
     font-weight: 700;
@@ -144,6 +164,7 @@ a {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--white-background);
+    margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -163,6 +184,19 @@ a {
 
 /* SECTION FEATURE*/
 .section-feature {
+    padding-top: 120px;
+}
+.hidden-feature {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .feature-title {
@@ -180,8 +214,11 @@ a {
 }
 
 /* IMAGES */
-
 .section-images {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.section-img {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -193,6 +230,8 @@ a {
 /* OUR TEAM */
 .team {
     background-color: var(--light);
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .team-titl {
     font-weight: 700;
@@ -225,10 +264,16 @@ a {
 /* SECTION BUTTON META*/
 .meta {}
 
-.meta-section {}
+.meta-section {
+    
+}
 
 .hidden-navigation {}
 
+.meta-btn {
+    padding-top: 96px;
+    padding-bottom: 72px;
+}
 .btn {
     font-family:'Roboto', sans-serif;
     font-weight: 500;
@@ -275,6 +320,8 @@ a {
 /* FOOTER */
 .footer {
     background-color: var(--primary-text-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .footer .stile {
     text-transform: uppercase;
