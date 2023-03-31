@@ -78,6 +78,7 @@ a {
 /* HEADER */
 .header {
     background-color: var(--white-background);
+    border-bottom: 1px solid var(--accent);
 }
 
 .header-navigation {
@@ -303,7 +304,7 @@ a {
 
 /* SECTION BUTTON META*/
 
-.meta-btn {
+.meta-list {
     padding-top: 96px;
     padding-bottom: 72px;
     display: flex;
@@ -322,7 +323,9 @@ a {
     color: var(--button-color);
     background-color: var(--light);
     display: block;
-}
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+} 
 
 .btn:hover,
 .btn:focus {
@@ -336,13 +339,20 @@ a {
 /* WORK */
 
 .work-list {
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
-    padding-bottom: 120px;
+    margin-bottom: 120px;
 }
 .work-item {
     flex-basis: calc((100% - 48px) / 3);
+}
+.work-aside {
+    border: 1px solid var(--accent);
+    border-top: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
 }
 .title-link {
