@@ -70,7 +70,7 @@ a {
     margin: 0 auto;
 }
 .container {
-    width: 1128px;
+    width: 1158px;
     padding-right: 15px;
     padding-left: 15px;
     margin: 0 auto;
@@ -80,6 +80,8 @@ a {
 .header {
     background-color: var(--white-background);
     border-bottom: 1px solid var(--accent);
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-navigation {
@@ -89,15 +91,12 @@ a {
 }
 .header-container {
     display: flex;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 .header-list {
     display: flex;
     gap: 40px;
 }
 .logo {
-    display: flex;
     margin-right: 76px;
 }
 
@@ -106,7 +105,6 @@ a {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     font-style: normal;
@@ -177,7 +175,7 @@ a {
     text-align: center;
     color: var(--white-background);
     margin: 0 auto;
-    padding-bottom: 48px;
+    margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -218,8 +216,10 @@ a {
 .feature-list {
     display: flex;
     margin-right: auto;
-    margin-bottom: 8px;
     gap: 24px;
+}
+.feature-item {
+    width: calc((100% - 72px) / 4);
 }
 .feature-title {
     font-weight: 500;
@@ -227,6 +227,7 @@ a {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    margin-bottom: 8px;
 }
 .feature-subtitle {
     font-size: 16px;
@@ -285,6 +286,7 @@ a {
 .team-item {
     background-color: #ffffff;
     width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 .team-aside {
     padding: 32px 16px;
@@ -297,6 +299,7 @@ a {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    margin-bottom: 8px;
 }
 .team-subtitle {
     font-weight: 400;
@@ -308,17 +311,31 @@ a {
 
 
 /* SECTION BUTTON META*/
-
+.meta-section {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+.hidden-navigation {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .meta-btn {
     display: flex;
     justify-content: center;
     gap: 24px;
     align-items: center;
     text-align: center;
-    padding-top: 96px;
-    padding-bottom: 72px;
-}
+    margin-bottom: 72px;
 
+}
 .btn {
     font-family:'Roboto', sans-serif;
     font-weight: 500;
@@ -331,8 +348,12 @@ a {
     display: block;
     border: 1px solid var(--accent);
     border-radius: 4px;
-    padding: 12px 24px ;
+    padding: 12px 24px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 } 
+
 
 .btn:hover,
 .btn:focus {
@@ -366,6 +387,7 @@ a {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    margin-bottom: 8px;
 }
 .work-link {
     font-weight: 500;
@@ -389,10 +411,7 @@ a {
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.logo {
-    display: flex;
-    margin-left: 0;
-}
+
 .footer .stile {
     text-transform: uppercase;
 }
@@ -401,24 +420,13 @@ a {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--button-color);
     text-decoration: none
 }
 .footer .logos {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
     color: var(--light);
-    text-decoration: none
 }
 .footer .content {
     width: 264px;
