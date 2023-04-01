@@ -51,7 +51,6 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
-
 }
 body {
 font-family: 'Roboto', sans-serif;
@@ -392,6 +391,7 @@ a {
 }
 .logo {
     display: flex;
+    margin-left: 0;
 }
 .footer .stile {
     text-transform: uppercase;
